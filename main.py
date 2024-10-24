@@ -1,5 +1,5 @@
 from encoder import encode
-#from decoder import decode
+from decoder import decode
 
 start = ''
 password = ''
@@ -18,7 +18,7 @@ while True:
         encoded_password = encode(start)
         print('Your password has been encoded and stored!')
     elif choice == '2':
-        #password = decode(new_password)
+        password = decode(new_password)
         print(f"The encoded password is {encoded_password}, and the original password is {password}")
     elif choice == '3':
         exit()
